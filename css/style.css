@@ -17,33 +17,3 @@ html {
     border-radius: 50%;
 }
 
-.form {
-    color: blue;
-    padding: 10px;
-    margin: 10px;
-}
-
-.form__amountEuro {
-    color: red;
-}
-
-.form__exchangeRate {
-    color: black;
-}
-
-.form__button {
-    background-color: rgb(233, 13, 13);
-    color: white;
-    border: 2px solid;
-    border-radius: 50%;
-}
-
-.form__button:hover {
-    background-color: black;
-    cursor: pointer;
-}
-
-
-.form__result {
-    color: red;
-}
