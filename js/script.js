@@ -1,17 +1,17 @@
 console.log ("bla bla bla")
 
-let form__amountEuro = document.querySelector(".js-form__amountEuro");
-let form__exchangeRate = document.querySelector(".js-form__exchangeRate");
+let formAmountEuro = document.querySelector(".js-formAmountEuro");
+let formExchangeRate = document.querySelector(".js-formExchangeRate");
 let form = document.querySelector(".js-form");
-let form__result = document.querySelector(".js-form__result");
+let formResult = document.querySelector(".js-formResult");
 
 form.addEventListener ("submit", (event) => {
     event.preventDefault();
 
-    let euro = form__amountEuro.value;
-    let pln = form__exchangeRate.value;
-    let result = euro * pln
-    form__result.innerText = "Result: " + result.toFixed(2) + " PLN"
+    let euro = formAmountEuro.value;
+    let pln = formExchangeRate.value;
+    let result = euro * pln;
+    formResult.innerText = "Result: " + result.toFixed(2) + " PLN";
 })
 
 
