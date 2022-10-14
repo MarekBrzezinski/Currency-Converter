@@ -1,5 +1,3 @@
-console.log ("bla bla bla")
-
 let formAmountEuroElement = document.querySelector(".js-formAmountEuro");
 let formExchangeRateElement = document.querySelector(".js-formExchangeRate");
 let formElement = document.querySelector(".js-form");
