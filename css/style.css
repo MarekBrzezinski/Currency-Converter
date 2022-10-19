@@ -14,5 +14,8 @@ html {
     margin: 20px auto;
     border: 2px solid blue;
     overflow-x: auto;
+    background-image: url("../images/background.jpg");
+    background-repeat: round;
+    background-attachment: fixed;
 }
 
