@@ -1,16 +1,25 @@
-let formAmountEuroElement = document.querySelector(".js-formAmountEuro");
-let formExchangeRateElement = document.querySelector(".js-formExchangeRate");
-let formElement = document.querySelector(".js-form");
-let formResultElement = document.querySelector(".js-formResult");
+{ 
+    const updateResultText = (result) => {
+        const formResultElement = document.querySelector(".js-formResult");
+        formResultElement.innerText = "Result: " + result.toFixed(2) + " PLN";
+    };
 
-formElement.addEventListener ("submit", (event) => {
-    event.preventDefault();
+    const CalkulateResult = (event) => {
+        event.preventDefault();
 
-    let euro = formAmountEuroElement.value;
-    let pln = formExchangeRateElement.value;
-    let result = euro * pln;
-    formResultElement.innerText = "Result: " + result.toFixed(2) + " PLN";
-})
+        const formAmountEuroElement = document.querySelector(".js-formAmountEuro");
+        const formExchangeRateElement = document.querySelector(".js-formExchangeRate");
+    
+        const euro = formAmountEuroElement.value;
+        const pln = formExchangeRateElement.value;
+        const result = euro * pln;
 
+        updateResultText (result)
+    };
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener ("submit", CalkulateResult);
+    };
 
-
+    init();
+}
