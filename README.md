@@ -1,4 +1,4 @@
-# Przelicznik Euro-Złoty
+# Currency Converter EURO-PLN
 
 **Demo**
 
