@@ -1,24 +1,47 @@
 .form {
-    color: blue; 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    color:rgb(33 138 127);
+    
+}
+.form__fieldset{
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 20px;
 }
 
 .form__amountEuro {
-    color: green;
+    color: rgb(0, 128, 0);
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 10px;
 }
 
 .form__exchangeRate {
-    color: black;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 255);
+    border-radius: 10px;
+}
+
+.form__result {
+    font-size: 25px;
 }
 
 .form__button {
     background-color: rgb(33 138 127);
-    color: white;
+    color: rgb(255, 255, 255);
     border: 2px solid;
     border-radius: 50%;
     padding: 8px 16px;
 }
 
 .form__button:hover {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     cursor: pointer;
 }

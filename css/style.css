@@ -7,20 +7,22 @@ html {
 }
 
 body {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
     padding: 10px;
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .container {
-    text-align: center;
-    max-width: 1000px;
-    background-color: rgb(220 244 245 / 46%);
-    padding: 50px;
+    flex-basis: 700px;
+    background-color: rgb(240, 239, 239);
+    padding: 10px;
     margin: 20px auto;
-    border: 2px solid blue;
+    border: 2px solid rgb(0, 0, 255);
     border-radius: 20px;
-    overflow-x: auto;
-    background-image: url("../images/background.jpg");
-    background-repeat: round;
-    background-attachment: fixed;
 }
 
